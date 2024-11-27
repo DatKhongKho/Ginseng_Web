@@ -1,0 +1,30 @@
+/* Thêm khoảng cách giữa các mục menu */
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Tạo khoảng cách giữa các mục menu */
+}
+
+/* Đảm bảo khoảng cách giữa các sub-menu */
+.navbar-nav .dropdown-menu {
+  margin-top: 10px; /* Khoảng cách giữa menu cha và menu con */
+  border-radius: 0; /* Giữ lại đường viền vuông cho menu con */
+}
+
+/* Tạo sự phân biệt giữa các mục menu với màu sắc */
+.navbar-nav .nav-link {
+  font-size: 16px; /* Kích thước chữ phù hợp */
+  padding: 10px 15px; /* Thêm padding để mục menu rộng hơn */
+  color: #fff; /* Màu chữ mặc định */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền */
+}
+
+/* Hiệu ứng hover cho các mục menu */
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: #007bff; /* Màu nền khi hover */
+  border-radius: 5px; /* Bo góc cho hiệu ứng hover */
+}
+
+/* Làm nổi bật các mục menu con */
+.navbar-nav .dropdown-item:hover {
+  background-color: #f8f9fa; /* Màu nền cho menu con khi hover */
+  color: #333; /* Màu chữ khi hover */
+}

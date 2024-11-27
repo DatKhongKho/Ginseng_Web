@@ -1,0 +1,79 @@
+.unique-login-form {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.unique-login-form .login-form {
+  width: 400px; /* Tăng chiều rộng */
+  background-color: #ffffff;
+  padding: 30px; /* Tăng padding để form rộng rãi hơn */
+  border-radius: 15px; /* Góc bo tròn mềm mại hơn */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Hiệu ứng đổ bóng nổi bật hơn */
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa các thành phần */
+}
+
+.unique-login-form .login-form h2 {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px; /* Tăng kích thước chữ */
+  font-weight: bold;
+}
+
+.unique-login-form .form-group {
+  display: flex;
+  flex-direction: column; /* Sắp xếp label và input theo chiều dọc */
+}
+
+.unique-login-form .form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px; /* Kích thước chữ lớn hơn */
+  color: #333333;
+}
+
+.unique-login-form .form-group input {
+  height: 45px; /* Tăng chiều cao */
+  padding: 0 15px; /* Tăng padding ngang */
+  border: 1px solid #dddddd;
+  border-radius: 8px; /* Góc bo tròn mềm mại hơn */
+  font-size: 16px; /* Font chữ dễ nhìn hơn */
+}
+
+.unique-login-form .form-group input:focus {
+  border-color: #ff0000;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.3); /* Hiệu ứng focus rõ ràng hơn */
+}
+
+.unique-login-form .btn {
+  height: 50px; /* Tăng chiều cao nút */
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* Nút mềm mại hơn */
+  font-size: 18px; /* Tăng kích thước chữ */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.unique-login-form .btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+@media (max-width: 768px) {
+  .unique-login-form .login-form {
+    width: 90%; /* Tự co giãn trên thiết bị nhỏ */
+    padding: 20px;
+  }
+}
